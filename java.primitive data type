@@ -1,0 +1,16 @@
+package primitive;
+
+public class primitivedatatype {
+
+	public static void main(String[] args) {
+		
+         System.out.print("Integer Min: "+Integer.MIN_VALUE+"\t Integer Max:"+Integer.MAX_VALUE+ "\t Integer size "+ Integer.SIZE +" bits");
+         System.out.print("\nShort Min: "+Short.MIN_VALUE+"\t Short Max:"+Short.MAX_VALUE+ "\t Short size "+ Short.SIZE +" bits");
+         System.out.print("\nFloat Min: "+Float.MIN_VALUE+"\t Float Max:"+Float.MAX_VALUE+ "\t Float size "+ Float.SIZE +" bits");
+         System.out.print("\nDouble Min: "+Double.MIN_VALUE+"\t Double Max:"+Double.MAX_VALUE+ "\t Double size "+ Double.SIZE +" bits");
+         System.out.print("\nCharacter Min: "+Character.MIN_VALUE+"\t Character Max:"+Character.MAX_VALUE+ "\t Character size "+ Character.SIZE +" bits");
+         System.out.print("\nLong Min: "+Long.MIN_VALUE+"\t Long  Max:"+Long.MAX_VALUE+ "\t Long size "+ Long.SIZE +" bits");
+         System.out.print("\nByte Min: "+Byte.MIN_VALUE+"\t Byte Max:"+Byte.MAX_VALUE+ "\t Byte size "+ Byte.SIZE +" bits");
+
+	}
+}
