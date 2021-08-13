@@ -1,0 +1,26 @@
+7] 
+
+when execute code using postfix operator then the output is :
+       i=11 and n=0
+And after when use postfix increment operator it first increment i value that is i= 11 and then the  11% 5 then 1 stored in n.
+ 
+After when use prefix operator output is :
+       i=11 n=1
+In the case of prefix operator it perform 10%5 first and store 0 in n.
+
+
+
+9]
+
+
+ In this pgm 6 printed because postfix increment operator which prints or stores value first and then increment it . That's why 6 is printed twice.
+
+
+
+10)
+
+
+aValue=8933.234;  
+aValue++;         
+System.out.println("Hello World!!!!!");   
+Bicycle mybike = new bicycle ();
