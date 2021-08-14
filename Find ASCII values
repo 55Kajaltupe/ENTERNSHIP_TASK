@@ -1,4 +1,4 @@
-Package java.ascii
+package java.ascii
 
 public class ASCII_value
   
@@ -18,4 +18,5 @@ System.out.println("The ASCII value of " + ch1 + " is: " + asciivalue1);
   
 System.out.println("The ASCII value of " + ch2 + " is: " + asciivalue2);  
 }  
-}  
+} 
+ 
