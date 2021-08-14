@@ -1,0 +1,15 @@
+package java.quotientremainder
+
+public class QuotientR_emainder {
+
+  public static void main(String[] args) {
+
+    int dividend = 50, divisor = 5;
+
+    int quotient(q) = dividend / divisor;
+    int remainder(r)= dividend % divisor;
+
+    System.out.println("Quotient = " + quotient(q));
+    System.out.println("Remainder = " + remainder(r));
+  }
+}
