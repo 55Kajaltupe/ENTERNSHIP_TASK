@@ -1,0 +1,27 @@
+
+public class interest {
+    public static void main(String[] args) {
+      
+        int principal=161258;
+
+        float rate=3.0f;
+
+        int months=5;
+
+        float simpleInterest,compoundInterest;
+           
+            //Monthly simple interest
+        simpleInterest=((principal*rate*months)/(100*12));
+
+        System.out.println("Monthly Simple interest on amount "+principal+" and "+months+" months is: "+simpleInterest);
+
+              // Monthly compound interest
+        float amount= (float) (principal*((Math.pow(  (1+(0.05/12))  , 12) )));
+      
+  compoundInterest=(amount-principal);
+     
+   System.out.println("Monthly compound interest on amount "+principal+" and months "+months+" is: "+compoundInterest);
+
+
+    }
+}
