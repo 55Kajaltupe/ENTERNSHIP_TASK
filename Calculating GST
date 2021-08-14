@@ -1,0 +1,11 @@
+package java.GST;
+
+public class gst{
+    public static void main(String[] args) {
+        float GST;
+        int basePrice=34900;
+        GST=basePrice*(18.0f/100);
+        System.out.println("Pay GST RS. "+GST+"GST amount on RS. 34900");
+
+    }
+}
