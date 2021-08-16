@@ -1,0 +1,36 @@
+19]
+a) if a Number is 3 then output is:
+    Second string 
+    Third string
+
+b)
+   Nested if is a control Flow.
+   And output is :
+    Second string 
+    Third string
+  3>=0, so executed the second if statement.
+ The second if statement's test can't success
+ because 3 !=0. Thus, the else clause executes.
+ Then the  second string is displayed. 
+The final println statement is outside of  if statement, 
+so it  gets executed, then third string is displayed.
+
+c)
+  if(anumber>=0)
+     if (anumber==0)
+          system.out.println("first string");
+       else
+          system.out.println("second string");
+
+    system.out.println("third string");
+
+d)if (aNumber >= 0)
+    {if (aNumber == 0)
+       {
+     System.out.println("first string");
+        }
+      else {
+       System.out.println("second string");
+        }
+     }
+    System.out.println("third string");
