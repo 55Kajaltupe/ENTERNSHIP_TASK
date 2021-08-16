@@ -1,0 +1,29 @@
+1)
+The most basic control flow statement supported 
+by the Java programming language is the if-then
+statement.
+
+2)
+The switch statement allows for any number of 
+possible execution paths.
+
+3)
+The do-while statement is similar to the while
+ statement, but evaluates its expression at the
+ bottom of the loop.
+
+4)
+  for(initial condition;final condition; increment/decrement)
+{
+      Statement 1;
+        .
+        .
+      statement n;
+}
+
+
+5)
+    While(condition)
+     {
+      Statements;
+      }
