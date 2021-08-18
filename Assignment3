@@ -1,0 +1,12 @@
+
+public class Assignment3 {
+    public static void main(String[] args) {
+        int avgOf3Emp=1000; 
+        int Emp1_Salary=1100;
+        int Emp2_Salary=500;
+        float Emp3_Salary; 
+
+        Emp3_Salary= (float) ((avgOf3Emp*3.0)/ (Emp1_Salary+Emp2_Salary));
+        System.out.println("Salary of the third employee is: "+Emp3_Salary);
+    }
+}
