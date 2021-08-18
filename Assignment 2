@@ -1,0 +1,11 @@
+
+public class Assignment2 {
+    public static void main(String[] args) {
+        String x="20-05-1990";
+        String date=x.split("-")[0];
+        String month=x.split("-")[1];
+        String year=x.split("-")[2];
+
+        System.out.println("Year is : "+year);
+    }
+}
