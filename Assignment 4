@@ -1,0 +1,15 @@
+
+public class Assignment4{
+   public static void main(String[] args) {
+        int percentage=30;
+        
+        int numerator=percentage;
+        int denominator=100;
+        
+        System.out.println(" Fraction of the "+ percentage+" % is: "+numerator+"/"+denominator);
+        
+        numerator=percentage/10;
+        denominator=1000/100;
+        System.out.println(" Fraction of the "+ percentage+" % is: "+numerator+"/"+denominator);
+      }
+}
