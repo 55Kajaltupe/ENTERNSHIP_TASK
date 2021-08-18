@@ -1,0 +1,13 @@
+public class Assignment5 {
+    public static void main(String[] args) {
+
+        int LT=340;
+        double sp=45.0;
+        int tl=160; 
+     sp=(double) sp*(1000/3600.0);
+        int distance=tl+LT;
+        double T=distance/sp;
+
+        System.out.println(" Time required is :"+ T+" Seconds");
+}
+}
