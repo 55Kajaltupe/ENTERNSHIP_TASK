@@ -1,0 +1,63 @@
+
+ class Methods{
+	int x;
+        int y;
+	int sum;
+	float mul;
+	float div;
+	static int mod;
+	//instance method 
+	void initializevalue()
+	{
+		x=30;
+                y=50;
+         }
+	//Without Return Type and Argument
+	void addition()
+	{
+		initializevalue(); 
+		sum=x+y;
+		System.out.println("Addition of two numbers  is "+sum);
+	}
+	//With Argument and Without Return type
+	void multiplication(int j, int k)
+	{
+		mul=j*k;
+		System.out.println("Multiplication of two numbers is "+mul);
+	}
+	//With Argument and Return type
+	float division (float p,float q)
+	{
+		div=p/q;
+		return div;
+	}
+	//Static Method with return type and with argument
+	
+	static int modulus(int a,int b)
+	{
+	mod=a%b;
+	return mod;
+	}
+	static void  Printingmethod()
+	{
+	int ret=modulus(50,10);
+	System.out.println("Mod is  "+ret );
+	}
+	
+     }
+
+public class java{
+
+	
+	public static void main(String[] args) {
+		
+	Methods obj = new Methods();
+	obj.addition();
+	obj.multiplication(65,12);
+	float retdiv=obj.division(52,3);
+	System.out.println("Division of two numbers is "+retdiv);
+	Methods.Printingmethod();
+	
+	}
+
+}
