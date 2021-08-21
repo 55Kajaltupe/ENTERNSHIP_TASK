@@ -1,0 +1,51 @@
+public class Overloading{
+
+//addition method of parameter a and b
+
+void addition(int a,int b){
+
+int sum=a+b;
+
+System.out.println("Sum of two numbers is "+sum);
+
+}
+
+//addition method of parameter a, b and c
+
+void addition(int a,int b,int c){
+
+int sum=a+b+c;
+
+System.out.println("Sum of three numbers is "+sum);
+
+}
+
+public static void main(String args[]){
+
+Overloading ovl=new Overloading();
+ovl.addition(2,5,10);
+ovl.addition(15,10);
+
+overriding ord= new overriding();
+ord.multiplication(50,30);
+ord.multiplication(70,80);
+}
+}
+
+
+class overriding{  
+  //defining a method  
+  void multiplication(int x,int y)
+{
+int mul=x*y;
+System.out.println("multiplication of two numbers:"+mul);
+}  
+}  
+//Creating a child class  
+class multiplication2 extends overriding{  
+  //defining the same method as in the parent class  
+  void multiplication(int p,int q)
+{
+   int mul =p*q;
+System.out.println("multiplication of two numbers is:"+mul);}  
+}  
