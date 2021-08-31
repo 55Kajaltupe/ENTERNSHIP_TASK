@@ -1,0 +1,106 @@
+class Student{
+    static String college="coep";
+    String name;
+    String Class;
+    String div;
+    String admiDate,Address,email;
+    long phone;
+    boolean isAdmit;
+    //default constructor
+    Student(){
+        System.out.println("Default constructor");
+
+    }
+    //constructor overloading
+    Student(String na,String cla,String di){
+        name=na;
+        Class=cla;
+        div=di;
+    }
+    Student(String na,String cla,String di,String adDa){
+        name=na;
+        Class=cla;
+        div=di;
+        admiDate=adDa;
+
+    }
+    Student(String na,String cla,String di,String adDa,String ad){
+        name=na;
+        Class=cla;
+        div=di;
+        admiDate=adDa;
+        Address=ad;
+    }
+    Student(String na,String cla,String di,String adDa,String ad,String ei,long pho){
+        name=na;
+        Class=cla;
+        div=di;
+        admiDate=adDa;
+        Address=ad;
+        email=ei;
+        phone=pho;
+    }
+
+    void admit(){
+        isAdmit=true;
+        System.out.println("You are admitted to "+college);
+    }
+    void terminate(){
+        isAdmit=false;
+        System.out.println("You are terminated from "+college);
+    }
+    void changeDivision(String dv){
+        div=dv;
+        System.out.println("your division is changed now ..It's "+div);
+    }
+    void changeAddress(String ad){
+        Address=ad;
+        System.out.println("your address is changed now ..It's "+Address);
+    }
+    void changeMobile(long mob){
+        phone=mob;
+        System.out.println("your mobile no. is changed now ..It's "+phone);
+    }
+    void changeEmail(String em){
+        email=em;
+        System.out.println("your email is changed now ..It's "+email);
+    }
+
+    void printDetails(){
+        String admit;
+        if(isAdmit){
+            admit="Admitted";
+        }
+        else{
+            admit="not Admitted";
+        }
+        System.out.println(name+"\t"+Class+"\t"+div+"\t"+admiDate+"\t"+Address+"\t"+email+"\t"+phone+"\t"+admit);
+    }
+
+
+}
+public class Java13{
+
+
+    public static void main(String[] args) {
+
+        //Creating Student class object
+        Student s1=new Student(); 
+
+        Student s2=new Student("kajal","FYco","A","05/08/2020","Sangola","kajal.1@gmail.com",987654321);
+
+        
+        s2.printDetails();
+
+        s2.changeAddress("mangalwedha");
+
+        s2.changeEmail("kajal.41@gmail.com");
+
+        s2.admit();
+
+        Student s3=new Student("janhavi","fymech","d","04/09/2019");
+        s3.printDetails();
+
+
+    }
+}
