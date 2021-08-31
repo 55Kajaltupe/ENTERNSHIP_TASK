@@ -1,0 +1,99 @@
+class Cognizant{
+    static String company="Cognizant";
+    int noOfEmployees=10000;
+    void print(){
+        System.out.println("Welcome to our"+company +"company");
+        System.out.println("We have "+noOfEmployees+" no of employees in our company.");
+    }
+    void work(){
+        System.out.println("We are working in Cognizant company");
+    }
+}
+//single inheritance
+class Developmentdept extends Cognizant{
+    int noOfEmployees=7000;
+    void print(){
+        System.out.println("We have "+noOfEmployees+" no of employees in development department.");
+    }
+    void work(){
+        System.out.println("We are working in development department of "+company);
+    }
+
+}
+//hierarchical inheritance
+class Designdept extends Cognizant{
+    int noOfEmployees=12000;
+    void print(){
+        System.out.println("We have "+noOfEmployees+" no of employees in design department.");
+    }
+    void work(){
+        System.out.println("We are working in design department of "+company);
+    }
+}
+//multilevel inheritance
+
+class Testingdept extends Designdept{
+    int noOfEmployees=20000;
+    void print(){
+        System.out.println("We have "+noOfEmployees+" no of employees in testing department.");
+    }
+    void work(){
+        System.out.println("We are working in testing department of "+company);
+    }
+}
+
+//single inheritance
+
+class Salesdept extends Cognizant{
+    int noOfEmployees=18000;
+    void print(){
+        System.out.println("We have "+noOfEmployees+" no of employees in sales department.");
+    }
+    void work(){
+        System.out.println("We are working in sales department of "+company);
+    }
+}
+
+//multilevel inheritance
+
+
+class Accountdept extends Salesdept{
+    int noOfEmployees=38000;
+    void print(){
+        System.out.println("We have "+noOfEmployees+" no of employees in account department.");
+    }
+    void work(){
+        System.out.println("We are working in account department of "+company);
+    }
+}
+
+
+
+public class Java24 {
+    public static void main(String[] args) {
+
+       Cognizant c1=new Cognizant();
+        c1.print();
+        c1.work();
+
+        Developmentdept d1=new Developmentdept();
+        d1.work();
+        d1.print();
+
+        Designdept ds=new Designdept();
+        ds.print();
+        ds.work();
+
+        Testingdept t1= new Testingdept();
+        t1.print();
+        t1.work();
+
+        Salesdept s1=new Salesdept();
+        s1.print();
+        s1.work();
+
+        Accountdept ac=new Accountdept();
+        ac.work();
+        ac.print();
+    }
+}
