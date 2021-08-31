@@ -1,0 +1,44 @@
+
+interface Cal{
+    void Add(int a,int b);
+    void Sub(int a,int b);
+    void Mul(int a,int b);
+    void Div(int a,int b);
+    void Mod(int a,int b);
+}
+class Arithmetic implements Cal{
+    public void Add(int a, int b) {
+        System.out.println("sum is :"+ (a+b));
+    }
+
+    @Override
+    public void Sub(int a, int b) {
+        System.out.println("substraction is :"+ (a-b));
+    }
+
+    @Override
+    public void Mul(int a, int b) {
+        System.out.println("Multiplication is :"+ (a*b));
+    }
+
+    @Override
+    public void Div(int a, int b) {
+        System.out.println("Division is :"+ (a/b));
+    }
+
+    @Override
+    public void Mod(int a, int b) {
+        System.out.println("MOd is :"+ (a%b));
+    }
+}
+public class Java26 {
+    public static void main(String[] args) {
+          Cal c=new Arithmetic();
+
+          c.Add(4,6);
+          c.Sub(4,1);
+          c.Mul(4,8);
+          c.Div(40,5);
+          c.Mod(20,5);
+    }
+}
