@@ -1,0 +1,92 @@
+
+
+abstract class abstractcls{
+
+
+    public abstract void result();
+    void arithmetic(){
+        System.out.println("Calculating arithmetic operations...");
+    }
+}
+
+class Addition extends abstractcls{
+    int x,y;
+    Addition(int a,int b){
+        x=a;
+        y=b;
+    }
+  
+    public void result() {
+        System.out.println("sum is :"+ (x+y));
+    }
+}
+
+class Substraction extends abstractcls {
+    int x,y;
+    Substraction(int a,int b){
+        x=a;
+        y=b;
+    }
+
+
+    public void result() {
+        System.out.println("Subtraction is :"+ (x-y));
+    }
+}
+class Multiplication extends abstractcls{
+    int x,y;
+    Multiplication(int a,int b){
+        x=a;
+        y=b;
+    }
+
+
+    public void result() {
+        System.out.println("Multiplication is :"+ (x*y));
+    }
+}
+
+class Division extends abstractcls{
+    int x,y;
+    Division(int a,int b){
+        x=a;
+        y=b;
+    }
+
+    public void result() {
+        System.out.println("Division is :"+ (x/y));
+    }
+}
+
+class Modulus extends abstractcls{
+    int x,y;
+    Modulus(int a,int b){
+        x=a;
+        y=b;
+    }
+   
+    public void result() {
+        System.out.println("Remainder is :"+ (x%y));
+    }
+}
+
+public class JPR25 {
+     public static void main(String[] args) {
+ 
+        abstractcls ab =new Addition(500,600);
+        ab.result();
+
+        ab=new Substraction(20,10);
+        ab.result();
+
+        ab=new Multiplication(50,20);
+        ab.result();
+
+        ab=new Division(50,5);
+        ab.result();
+
+        ab=new Modulus(50,10);
+        ab.result();
+
+    }
+}
