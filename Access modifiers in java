@@ -1,0 +1,33 @@
+package modify; 
+import defaultAcc.Default;
+import protectedAcc.Protected; 
+import privateAcc.Private; 
+import publicAcc.Public;
+
+public class AccessModifierEx extends Protected{
+	
+	void callSuperMethods() {
+	    super.proMethod(4, 6); 
+	    int a=super.proVar;
+	    
+	
+	}
+
+	public static void main(String[] args) {
+	
+	    Default df=new Default();
+	    
+		Protected pro=new Protected();
+        int a=pro.pub;//public variable of Protected class is accessible only
+      
+        Public pb=new Public();
+        int b=pb.pubVar;
+        pb.pubMethod(23, 12);
+       
+        Private prv=new Private();
+  
+		
+
+	}
+
+}
